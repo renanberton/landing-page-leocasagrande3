@@ -1194,8 +1194,8 @@ section {
     }
     
     .module-card {
-        width: 220px;
-        min-width: 220px;
+        width: 235px;
+        min-width: 235px;
         padding: 20px;
         margin: 0 auto;
     }
@@ -1206,5 +1206,14 @@ section {
     
     .module-card p {
         font-size: 0.85rem;
+    }
+}
+
+@media (max-width: 320px) {
+     .module-card {
+        width: 175px;
+        min-width: 175px;
+        padding: 20px;
+        margin: 0 auto;
     }
 }
