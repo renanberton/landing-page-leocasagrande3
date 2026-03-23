@@ -449,10 +449,8 @@ section {
     padding: 20px;
     border-radius: var(--border-radius);
     display: flex;
-    flex-direction: column;
     gap: 15px;
-    align-items: center;
-    text-align: center;
+    align-items: flex-start;
     transition: var(--transition);
     border: 1px solid rgba(184, 41, 224, 0.1);
 }
@@ -1018,6 +1016,14 @@ section {
     
     .testimonial-card {
         flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .learn-item {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
         align-items: center;
         text-align: center;
     }
