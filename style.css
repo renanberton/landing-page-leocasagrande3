@@ -449,8 +449,10 @@ section {
     padding: 20px;
     border-radius: var(--border-radius);
     display: flex;
+    flex-direction: column;
     gap: 15px;
-    align-items: flex-start;
+    align-items: center;
+    text-align: center;
     transition: var(--transition);
     border: 1px solid rgba(184, 41, 224, 0.1);
 }
@@ -520,6 +522,11 @@ section {
     border-radius: var(--card-radius);
     border: 1px solid rgba(176, 130, 55, 0.1);
     transition: var(--transition);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 
 .module-card:hover {
