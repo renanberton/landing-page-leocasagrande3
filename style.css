@@ -4,14 +4,14 @@
     --bg-secondary: #0a0a0f;
     --bg-tertiary: #111118;
     --bg-card: #15151f;
-    --accent-primary: #C08552;
-    --accent-secondary: #8C5A3C;
+    --accent-primary: #f37803;
+    --accent-secondary: #f28d0b;
     --accent-glow: #C08552;
     --text-primary: #ffffff;
     --text-secondary: #e0e0e0;
     --text-tertiary: #a0a0b0;
-    --gradient-1: linear-gradient(135deg, #C08552 0%, #8C5A3C 100%);
-    --gradient-2: linear-gradient(135deg, #8C5A3C 0%, #2a2a3a 100%);
+    --gradient-1: linear-gradient(135deg, #f28d0b 0%, #f37803 100%);
+    --gradient-2: linear-gradient(135deg, #f37803 0%, #f28d0b 100%);
     --gradient-glow: linear-gradient(135deg, rgba(192, 160, 53, 0.2) 0%, rgba(174, 126, 59, 0.2) 100%);
     --success: #50fa7b;
     --warning: #1f1c1f;
@@ -1026,6 +1026,14 @@ section {
         justify-content: center;
         align-items: center;
         text-align: center;
+    }
+
+    .final-price { 
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        flex-direction: column;
     }
 }
 
