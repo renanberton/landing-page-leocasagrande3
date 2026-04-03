@@ -120,8 +120,17 @@ section {
     display: flex;
     align-items: center;
     position: relative;
-    background: radial-gradient(circle at 30% 50%, #1a0b2e 0%, var(--bg-primary) 70%);
+    background: url("assets/imgs/Prancheta22.png");
+    background-position: center;   
+    background-size: cover; 
     overflow: hidden;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.8); /* intensidade da máscara */
 }
 
 .hero-bg {
@@ -917,11 +926,33 @@ section {
 
 /* ===== FOOTER ===== */
 .footer {
-    background: var(--bg-primary);
-    padding: 30px 0;
+    background: var(--accent-primary);
+    padding: 30px 15px;
     text-align: center;
-    color: var(--text-tertiary);
+    color: var(--text-primary);
     border-top: 1px solid rgba(184, 41, 224, 0.1);
+}
+
+.footer p {
+    margin-bottom: 15px;
+    font-size: 14px;
+}
+
+.footer a {
+    display: inline-block;
+}
+
+.footer img {
+    max-width: 180px;   /* controla tamanho */
+    width: 100%;
+    height: auto;       /* mantém proporção */
+    opacity: 0.8;
+    transition: 0.3s ease;
+}
+
+.footer img:hover {
+    opacity: 1;
+    transform: scale(1.05);
 }
 
 /* ===== RESPONSIVE ===== */
@@ -1035,6 +1066,16 @@ section {
         width: 100%;
         flex-direction: column;
     }
+
+    @media (max-width: 768px) {
+    .footer img {
+        max-width: 140px;
+    }
+
+    .footer p {
+        font-size: 14px;
+    }
+}
 }
 
 /* Adicione/modifique estas partes no arquivo styles.css */
