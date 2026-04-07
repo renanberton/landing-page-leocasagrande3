@@ -733,7 +733,7 @@ section {
 
 .estimated-price {
     color: var(--text-tertiary);
-    margin-bottom: 15px;
+    margin: 15px;    
 }
 
 .estimated-price span {
@@ -743,6 +743,7 @@ section {
 
 .final-price {
     margin: 15px 0;
+    display: none;
 }
 
 .today-label {
@@ -756,11 +757,6 @@ section {
     font-weight: 700;
     color: var(--accent-primary);
     margin-left: 10px;
-}
-
-.installment-info {
-    color: var(--text-tertiary);
-    font-size: 0.9rem;
 }
 
 .offer-card {
@@ -1060,11 +1056,23 @@ section {
     }
 
     .final-price { 
-        display: flex;
+        display: none;
         justify-content: center;
         align-items: center;
         width: 100%;
         flex-direction: column;
+    }
+
+    .about-text {
+        text-align: center;
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .credentials {
+        justify-content: center;
+        align-items: center;
+        width: 100%;
     }
 
     @media (max-width: 768px) {

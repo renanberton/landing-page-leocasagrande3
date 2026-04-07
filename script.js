@@ -9,7 +9,7 @@ function animateNumbers() {
                 const targetNumber = parseInt(target.getAttribute('data-target'));
                 let current = 0;
                 const increment = targetNumber / 50;
-                const stepTime = 2000 / 50;
+                const stepTime = 3500 / 50;
                 
                 const timer = setInterval(() => {
                     current += increment;
