@@ -829,9 +829,12 @@ section {
     padding: 50px;
     border-radius: var(--card-radius);
     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
     align-items: center;
     gap: 40px;
-    border: 2px solid var(--accent-primary);
+    border: 1px solid var(--accent-primary);
 }
 
 .guarantee-icon i {
@@ -1299,8 +1302,7 @@ section {
     padding-bottom: 56.25%;
     height: 0;
     overflow: hidden;
-    border-radius: 20px;
-    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5), 0 0 0 2px rgba(184, 41, 224, 0.2);
+    border-radius: 20px;    
 }
 
 .video-wrapper iframe {
