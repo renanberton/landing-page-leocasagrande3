@@ -259,8 +259,7 @@ section {
 .pain-item {
     background: var(--bg-card);
     padding: 25px 30px;
-    border-radius: var(--card-radius);
-    border: 1px solid rgba(184, 41, 224, 0.1);
+    border-radius: var(--card-radius);    
     display: flex;
     align-items: center;
     gap: 20px;
@@ -460,8 +459,7 @@ section {
     display: flex;
     gap: 15px;
     align-items: flex-start;
-    transition: var(--transition);
-    border: 1px solid rgba(184, 41, 224, 0.1);
+    transition: var(--transition);    
 }
 
 .learn-item:hover {
@@ -633,8 +631,7 @@ section {
 .testimonial-card {
     background: var(--bg-card);
     padding: 30px;
-    border-radius: var(--card-radius);
-    border: 1px solid rgba(184, 41, 224, 0.1);
+    border-radius: var(--card-radius);    
     display: flex;
     gap: 20px;
     transition: var(--transition);
@@ -698,8 +695,7 @@ section {
 .offer-items {
     background: var(--bg-card);
     padding: 40px;
-    border-radius: var(--card-radius);
-    border: 1px solid rgba(184, 41, 224, 0.2);
+    border-radius: var(--card-radius);    
 }
 
 .offer-items h3 {
@@ -900,7 +896,7 @@ section {
 .cta-phrase {
     margin: 40px 0;
     padding: 30px;
-    background: rgba(0,0,0,0.3);
+    background: rgba(0,0,0,0.75);
     border-radius: var(--border-radius);
 }
 
@@ -1133,8 +1129,7 @@ section {
     flex-shrink: 0;
     background: var(--bg-card);
     padding: 30px;
-    border-radius: var(--card-radius);
-    border: 1px solid rgba(184, 41, 224, 0.1);
+    border-radius: var(--card-radius);    
     transition: var(--transition);
     box-sizing: border-box;
 }
@@ -1285,5 +1280,49 @@ section {
         min-width: 175px;
         padding: 20px;
         margin: 0 auto;
+    }
+}
+
+/* Seções de vídeo */
+.video-vsl {
+    padding: 60px 0 40px;
+    background: linear-gradient(135deg, #0a0a0f 0%, #1a0a2e 100%);
+}
+
+.video-depoimento {
+    padding: 60px 0;
+    background: #0a0a0f;
+}
+
+.video-wrapper {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+    border-radius: 20px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5), 0 0 0 2px rgba(184, 41, 224, 0.2);
+}
+
+.video-wrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+.depoimento-legenda {
+    text-align: center;
+    margin-top: 20px;
+    color: #888;
+    font-size: 0.9rem;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+    .video-vsl,
+    .video-depoimento {
+        padding: 40px 0;
     }
 }
